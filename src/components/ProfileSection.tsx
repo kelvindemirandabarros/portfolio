@@ -1,6 +1,8 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+
+// Components:
 import { TypeAnimation } from 'react-type-animation';
 
 export function ProfileSection() {
@@ -26,6 +28,11 @@ export function ProfileSection() {
             wrapper='span'
             speed={50}
             repeat={Infinity}
+            style={{
+              fontSize: '1.5em',
+              display: 'inline-block',
+              marginBottom: '12px'
+            }}
           />
 
           <p className='text-[#adb7be] text-base sm:text-lg mb-6 lg:text-xl'>
