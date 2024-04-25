@@ -1,5 +1,7 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
+import { TypeAnimation } from 'react-type-animation';
 
 export function ProfileSection() {
   const image_side = 150;
@@ -11,6 +13,20 @@ export function ProfileSection() {
           <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600'>{`Olá, Kelvin aqui...`}</span>
           </h1>
+
+          <TypeAnimation
+            sequence={[
+              'Desenvolvedor Backend',
+              1000,
+              'Desenvolvedor Mobile',
+              1000,
+              'Desenvolvedor Frontend',
+              1000
+            ]}
+            wrapper='span'
+            speed={50}
+            repeat={Infinity}
+          />
 
           <p className='text-[#adb7be] text-base sm:text-lg mb-6 lg:text-xl'>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ex
