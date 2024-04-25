@@ -29,10 +29,9 @@ export function ProfileSection() {
           />
 
           <p className='text-[#adb7be] text-base sm:text-lg mb-6 lg:text-xl'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ex
-            suscipit placeat, exercitationem veritatis quaerat dolor eum
-            officiis obcaecati impedit consequuntur ratione tempore temporibus
-            ullam! Aperiam tenetur vero itaque est.
+            {
+              'Este portfólio tem o intuito de mostrar minhas experiências de desenvolvimento web (backend, mobile e frontend) através do meu projeto pessoal que não é código aberto.'
+            }
           </p>
 
           <div>
