@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-interface NavLinkInterface {
+export interface NavLinkInterface {
   href: string;
   title: string;
 }
