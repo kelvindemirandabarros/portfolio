@@ -18,10 +18,10 @@ const TAB_DATA: TabDataItemInterface[] = [
     id: 'skills',
     content: (
       <ul className='list-disc pl-2'>
-        <li>Node.js - Express.js, Fastify</li>
-        <li>MongoDB, MySQL</li>
-        <li>React Native</li>
-        <li>React.js / Next.js</li>
+        <li>Backend Node.js - Express.js, Fastify</li>
+        <li>Banco de Dados MongoDB, MySQL</li>
+        <li>Mobile React Native</li>
+        <li>Frontend React.js / Next.js</li>
       </ul>
     )
   },
