@@ -20,9 +20,9 @@ export function ProfileSection() {
             sequence={[
               'Desenvolvedor Backend',
               1000,
-              'Desenvolvedor Mobile',
-              1000,
               'Desenvolvedor Frontend',
+              1000,
+              'Desenvolvedor Mobile',
               1000
             ]}
             wrapper='span'
@@ -37,7 +37,7 @@ export function ProfileSection() {
 
           <p className='text-[#adb7be] text-base sm:text-lg mb-6 lg:text-xl'>
             {
-              'Este portfólio tem o intuito de mostrar minhas experiências de desenvolvimento web (backend, mobile e frontend) através do meu projeto pessoal que não é código aberto.'
+              'Este portfólio tem o intuito de mostrar minhas experiências de desenvolvimento web (backend, frontend e mobile) através do meu maior projeto pessoal (que não é código aberto).'
             }
           </p>
 
@@ -56,7 +56,7 @@ export function ProfileSection() {
 
             <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-purple-500 hover:bg-slate-800 text-white mt-3'>
               <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
-                Download CV
+                Baixar Currículo
               </span>
             </button>
           </div>

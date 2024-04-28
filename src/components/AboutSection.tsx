@@ -30,7 +30,11 @@ const TAB_DATA: TabDataItemInterface[] = [
     id: 'education',
     content: (
       <ul className='list-disc pl-2'>
-        <li>Análise e Desenvolvimento de Sistemas - Faculdade Estácio de Sá</li>
+        <li>
+          {
+            'Análise e Desenvolvimento de Sistemas - Faculdade Estácio de Sá (em curso)'
+          }
+        </li>
       </ul>
     )
   },

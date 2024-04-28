@@ -15,8 +15,8 @@ const nav_links = [
     href: '#about'
   },
   {
-    title: 'Projeto',
-    href: '#project'
+    title: 'Projetos',
+    href: '#projects'
   },
   {
     title: 'Contato',
