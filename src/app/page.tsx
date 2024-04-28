@@ -1,9 +1,8 @@
-import Image from 'next/image';
-
 // Components:
 import { Navbar } from '@/components/Navbar';
 import { ProfileSection } from '@/components/ProfileSection';
 import { AboutSection } from '@/components/AboutSection';
+import { ProjectsSection } from '@/components/ProjectsSection';
 
 export default function Home() {
   return (
@@ -14,6 +13,8 @@ export default function Home() {
         <ProfileSection />
 
         <AboutSection />
+
+        <ProjectsSection />
       </div>
     </main>
   );
