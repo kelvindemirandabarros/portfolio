@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import { HomeModernIcon } from '@heroicons/react/24/outline';
 
 // Components:
 import { NavLink } from './NavLink';
@@ -34,7 +35,7 @@ export function Navbar() {
           href={'/'}
           className='text-2xl md:text-5xl text-white font-semibold'
         >
-          Logo
+          <HomeModernIcon className='h-8 w-8 ml-8' />
         </Link>
 
         <div className='mobile-menu block md:hidden'>
