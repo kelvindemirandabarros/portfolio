@@ -1,4 +1,5 @@
 'use client';
+
 import React, { useState, useRef } from 'react';
 import { ProjectCard } from './ProjectCard';
 import { ProjectTag } from './ProjectTag';
@@ -28,7 +29,7 @@ export function ProjectsSection() {
     project.tags.includes(tag)
   );
 
-  const cardVariants = {
+  const card_variants = {
     initial: { y: 50, opacity: 0 },
     animate: { y: 0, opacity: 1 }
   };
@@ -73,7 +74,7 @@ export function ProjectsSection() {
         {filtered_projects.map((project, index) => (
           <motion.li
             key={index}
-            variants={cardVariants}
+            variants={card_variants}
             initial='initial'
             animate={is_in_view ? 'animate' : 'initial'}
             transition={{ duration: 0.3, delay: index * 0.4 }}
