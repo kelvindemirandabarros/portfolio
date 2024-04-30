@@ -77,7 +77,7 @@ export function ProjectsSection() {
             variants={card_variants}
             initial='initial'
             animate={is_in_view ? 'animate' : 'initial'}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
+            transition={{ duration: 0.5, delay: index * 0.6 }}
           >
             <ProjectCard
               key={project.id}
