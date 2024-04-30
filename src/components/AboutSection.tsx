@@ -2,6 +2,7 @@
 
 import React, { useTransition, useState } from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 // Components:
 import { TabButton } from './TabButton';
@@ -69,15 +70,26 @@ export function AboutSection() {
   return (
     <section className='text-white' id='about'>
       <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-        <Image
-          alt='Imagem de uma mesa com um computador, vários acessórios de escritório e dispositivos eletrônicos, e algumas prateleiras na parede com objetos diversos.'
-          src='/images/about_image.png'
-          width={500}
-          height={500}
-          style={{ borderRadius: 20 }}
-        />
+        <motion.div
+          initial={{ x: -500, opacity: 0, scale: 0.4 }}
+          animate={{ x: 0, opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <Image
+            alt='Imagem de uma mesa com um computador, vários acessórios de escritório e dispositivos eletrônicos, e algumas prateleiras na parede com objetos diversos.'
+            src='/images/about_image.png'
+            width={500}
+            height={500}
+            style={{ borderRadius: 20 }}
+          />
+        </motion.div>
 
-        <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
+        <motion.div
+          initial={{ x: 500, opacity: 0, scale: 0.4 }}
+          animate={{ x: 0, opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className='mt-4 md:mt-0 text-left flex flex-col h-full'
+        >
           <h2 className='text-4xl font-bold text-white mb-4'>Sobre mim</h2>
 
           <p className='text-base lg:text-lg'>
@@ -117,7 +129,7 @@ export function AboutSection() {
           <div className='mt-8'>
             {TAB_DATA.find((item) => item.id === tab)?.content}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
