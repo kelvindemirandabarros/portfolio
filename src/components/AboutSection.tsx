@@ -1,8 +1,8 @@
 'use client';
 
-import React, { useTransition, useState } from 'react';
+import React, { useTransition, useState, useRef } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 
 // Components:
 import { TabButton } from './TabButton';
@@ -61,19 +61,36 @@ export function AboutSection() {
   const [tab, set_tab] = useState('skills');
   const [is_pending, start_transition] = useTransition();
 
+  const ref_image = useRef(null);
+  const is_in_view_image = useInView(ref_image, { once: true });
+
+  const ref_about = useRef(null);
+  const is_in_view_about = useInView(ref_about, { once: true });
+
   const handle_tab_change = (id: string) => {
     start_transition(() => {
       set_tab(id);
     });
   };
 
+  const variants_image = {
+    initial: { x: -500, opacity: 0, scale: 0.4 },
+    animate: { x: 0, opacity: 1, scale: 1 }
+  };
+
+  const variants_about = {
+    initial: { x: 500, opacity: 0, scale: 0.4 },
+    animate: { x: 0, opacity: 1, scale: 1 }
+  };
+
   return (
     <section className='text-white' id='about'>
       <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
         <motion.div
-          initial={{ x: -500, opacity: 0, scale: 0.4 }}
-          animate={{ x: 0, opacity: 1, scale: 1 }}
+          variants={variants_image}
+          animate={is_in_view_image ? 'animate' : 'initial'}
           transition={{ duration: 1 }}
+          ref={ref_image}
         >
           <Image
             alt='Imagem de uma mesa com um computador, vários acessórios de escritório e dispositivos eletrônicos, e algumas prateleiras na parede com objetos diversos.'
@@ -85,9 +102,10 @@ export function AboutSection() {
         </motion.div>
 
         <motion.div
-          initial={{ x: 500, opacity: 0, scale: 0.4 }}
-          animate={{ x: 0, opacity: 1, scale: 1 }}
+          variants={variants_about}
+          animate={is_in_view_about ? 'animate' : 'initial'}
           transition={{ duration: 1 }}
+          ref={ref_about}
           className='mt-4 md:mt-0 text-left flex flex-col h-full'
         >
           <h2 className='text-4xl font-bold text-white mb-4'>Sobre mim</h2>
