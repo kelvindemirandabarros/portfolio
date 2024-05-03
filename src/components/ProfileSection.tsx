@@ -44,7 +44,7 @@ export function ProfileSection() {
 
           <p className='text-[#adb7be] text-base sm:text-lg mb-6 lg:text-xl'>
             {
-              'Este portfólio tem o intuito de mostrar minhas experiências de desenvolvimento web (backend, frontend e mobile) através do meu maior projeto pessoal (que não é código aberto).'
+              'Este portfólio tem o intuito de mostrar minhas experiências de desenvolvimento web (backend, frontend e mobile) através do meu portfólio, e do meu maior projeto pessoal (que não é código aberto), em formato de blog.'
             }
           </p>
 
