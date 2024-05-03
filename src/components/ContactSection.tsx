@@ -7,6 +7,7 @@ import Image from 'next/image';
 // SVG Icons:
 import GithubIcon from '../../public/github-icon.svg';
 import LinkedinIcon from '../../public/linkedin-icon.svg';
+import WhatsappIcon from '../../public/whatsapp-icon.svg';
 
 export function ContactSection() {
   const [email_submitted, set_email_submitted] = useState(false);
@@ -62,7 +63,7 @@ export function ContactSection() {
           {`Atualmente estou em busca de novas oportunidades, minha caixa de entrada está sempre aberta. Se você tiver alguma dúvida ou apenas quiser dizer oi, farei o possível para entrar em contato com você! Estas são minhas redes sociais:`}
         </p>
 
-        <div className='socials flex flex-row gap-2'>
+        <div className='socials flex flex-row gap-4'>
           <Link href='https://github.com/kelvindemirandabarros' target='_blank'>
             <Image src={GithubIcon} alt='Ícone do Github' />
           </Link>
@@ -72,6 +73,20 @@ export function ContactSection() {
             target='_blank'
           >
             <Image src={LinkedinIcon} alt='Ícone do LinkedIn' />
+          </Link>
+
+          <Link
+            href='https://api.whatsapp.com/send?phone=+5583996633179&text=Ol%C3%A1+Kelvin%2C+estou+vindo+atrav%C3%A9s+do+seu+portf%C3%B3lio+e+gostaria+de+...'
+            target='_blank'
+          >
+            <Image
+              src={WhatsappIcon}
+              alt='Ícone do Whatsapp'
+              style={{
+                width: 48,
+                height: 48
+              }}
+            />
           </Link>
         </div>
       </div>
