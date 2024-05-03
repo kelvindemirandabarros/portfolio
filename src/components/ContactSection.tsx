@@ -8,7 +8,7 @@ import Image from 'next/image';
 import GithubIcon from '../../public/github-icon.svg';
 import LinkedinIcon from '../../public/linkedin-icon.svg';
 
-export function EmailSection() {
+export function ContactSection() {
   const [email_submitted, set_email_submitted] = useState(false);
 
   const handle_submit = async (event: React.FormEvent<HTMLFormElement>) => {

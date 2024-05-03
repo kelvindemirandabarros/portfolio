@@ -3,7 +3,7 @@ import { Navbar } from '@/components/Navbar';
 import { ProfileSection } from '@/components/ProfileSection';
 import { AboutSection } from '@/components/AboutSection';
 import { ProjectsSection } from '@/components/ProjectsSection';
-import { EmailSection } from '@/components/EmailSection';
+import { ContactSection } from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
 
         <ProjectsSection />
 
-        <EmailSection />
+        <ContactSection />
 
         <Footer />
       </div>
