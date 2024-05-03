@@ -1,13 +1,12 @@
 'use client';
 
 import React, { useState } from 'react';
-import Link from 'next/link';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
-import { HomeModernIcon } from '@heroicons/react/24/outline';
 
 // Components:
 import { NavLink } from './NavLink';
 import { MenuOverlay } from './MenuOverlay';
+import { HomeIcon } from './HomeIcon';
 
 // Consts:
 const nav_links = [
@@ -31,12 +30,7 @@ export function Navbar() {
   return (
     <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100'>
       <div className='flex flex-wrap items-center justify-between mx-auto px-4 py-2'>
-        <Link
-          href={'/'}
-          className='text-2xl md:text-5xl text-white font-semibold'
-        >
-          <HomeModernIcon className='h-8 w-8 ml-8' />
-        </Link>
+        <HomeIcon />
 
         <div className='mobile-menu block md:hidden'>
           {!navbar_open ? (
