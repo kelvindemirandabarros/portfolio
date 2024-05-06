@@ -19,9 +19,9 @@ export default function Home() {
         <ProjectsSection />
 
         <ContactSection />
-
-        <Footer />
       </div>
+
+      <Footer />
     </main>
   );
 }
