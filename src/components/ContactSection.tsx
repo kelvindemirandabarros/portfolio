@@ -83,8 +83,8 @@ export function ContactSection() {
               src={WhatsappIcon}
               alt='Ícone do Whatsapp'
               style={{
-                width: 48,
-                height: 48
+                width: 42,
+                height: 42
               }}
             />
           </Link>
