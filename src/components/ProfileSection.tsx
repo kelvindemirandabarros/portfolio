@@ -25,11 +25,13 @@ export function ProfileSection() {
 
           <TypeAnimation
             sequence={[
-              'Desenvolvedor Backend',
+              'Desenvolvedor FullStack',
               1000,
-              'Desenvolvedor Frontend',
+              'Node.js',
               1000,
-              'Desenvolvedor Mobile',
+              'React.js / Next.js',
+              1000,
+              'React Native',
               1000
             ]}
             wrapper='span'
