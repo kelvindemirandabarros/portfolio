@@ -25,13 +25,19 @@ export function ProfileSection() {
 
           <TypeAnimation
             sequence={[
-              'Desenvolvedor FullStack',
+              'Desenvolvedor Frontend',
               1000,
-              'Node.js',
+              'Desenvolvedor Mobile',
+              1000,
+              'Desenvolvedor Backend',
+              1000,
+              'Desenvolvedor Full-Stack',
               1000,
               'React.js / Next.js',
               1000,
               'React Native',
+              1000,
+              'Node.js',
               1000
             ]}
             wrapper='span'
@@ -46,28 +52,29 @@ export function ProfileSection() {
 
           <p className='text-[#adb7be] text-base sm:text-lg mb-6 lg:text-xl'>
             {
-              'Este portfólio tem o intuito de mostrar minhas experiências de desenvolvimento web (backend, frontend e mobile) através do meu portfólio, e do meu maior projeto pessoal (que não é código aberto), em formato de blog.'
+              'Aqui você encontra minhas experiências de desenvolvimento web (frontend, mobile, backend, full-stack), e meu projeto pessoal em formato de blog (parte em desenvolvimento).'
             }
           </p>
 
           <div>
-            <button
-              className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-purple-500 hover:bg-slate-200 text-white'
-              onClick={() => {
-                window.open(
-                  'https://www.linkedin.com/in/kelvindemirandabarros/',
-                  '_blank'
-                );
-              }}
+            <a
+              href='https://www.linkedin.com/in/kelvindemirandabarros/'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='Abrir perfil no LinkedIn'
             >
-              LinkedIn
-            </button>
+              <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-purple-500 hover:bg-slate-200 text-white focus:outline-none focus:ring'>
+                LinkedIn
+              </button>
+            </a>
 
             <a
               href='https://programathor.s3.sa-east-1.amazonaws.com/uploads/user/curriculum/54952/curriculo_kelvin_de_miranda_barros.pdf?X-Amz-Expires=600&X-Amz-Date=20240507T041618Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIIL73EXGLO35ED5Q%2F20240507%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=58b03ecf09688d44f8a2dfcb0ce1ced9c10b1ff1f8027073859440d1aad0dc0e'
               target='_blank'
+              rel='noopener noreferrer'
+              aria-label='Baixar currículo'
             >
-              <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-purple-500 hover:bg-slate-800 text-white mt-3'>
+              <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-purple-500 hover:bg-slate-800 text-white mt-3 focus:outline-none focus:ring'>
                 <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
                   Baixar Currículo
                 </span>
