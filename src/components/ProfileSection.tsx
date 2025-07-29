@@ -69,7 +69,7 @@ export function ProfileSection() {
             </a>
 
             <a
-              href='https://programathor.s3.sa-east-1.amazonaws.com/uploads/user/curriculum/54952/curriculo_kelvin_de_miranda_barros.pdf?X-Amz-Expires=600&X-Amz-Date=20240507T041618Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIIL73EXGLO35ED5Q%2F20240507%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=58b03ecf09688d44f8a2dfcb0ce1ced9c10b1ff1f8027073859440d1aad0dc0e'
+              href='https://www.linkedin.com/ambry/?x-li-ambry-ep=AQL0nl8M170sSgAAAZhX-aDMUoWXFp6FZVknsN8SUsZOCUHd_iYTb-NfTMwCkkvomExjG3f70nosre5oAl1P1Si6c8m_9uWcFLTXCkZ-DqHASEWFv4QlRX7NJMEDdw3-U7HuSS6jZ_EVvKTug7GgnZwTWmlfg9QTgjD0YwMWXKKMEaaBdCxrZU96SYkw3R6k2etrhYKpFVTt6wmEQnj-GgKysxDT-yDn7GMnIkqschViD9XP_LxxeNz3RomrhGkXA4uMZAjPM5Lgb34VbGaQuniebfQ6YDDQZV3APA8Enp7kC7YT6L0vQHM4BioXLeE699Ox1m7duhAbLC_7T-8Q9ENCqeom_fUhrBSWqLNPrn9iFSAMjR3LdQJJeExtAHtAurRekdxR0ja1d6ZS8lDztpUsmqCyHOHdroNMSJ1YYpqw2i7Iqw0PCzAH9gK4W5DvLbiCFxdKrLygo2ajs4DQleZyzI4XjuLvFy2Zq2dWoq1EKTd8LLDGftKl_ys4vTd0Vmba76BMgVlHtNhF7ur1RPskdOwlTKKzkh-RugMkFfaN5PmuKranUsMaOoxRHJRGWg_Ikg'
               target='_blank'
               rel='noopener noreferrer'
               aria-label='Baixar currículo'
