@@ -69,7 +69,7 @@ export function ProfileSection() {
             </a>
 
             <a
-              href='https://www.linkedin.com/ambry/?x-li-ambry-ep=AQL0nl8M170sSgAAAZhX-aDMUoWXFp6FZVknsN8SUsZOCUHd_iYTb-NfTMwCkkvomExjG3f70nosre5oAl1P1Si6c8m_9uWcFLTXCkZ-DqHASEWFv4QlRX7NJMEDdw3-U7HuSS6jZ_EVvKTug7GgnZwTWmlfg9QTgjD0YwMWXKKMEaaBdCxrZU96SYkw3R6k2etrhYKpFVTt6wmEQnj-GgKysxDT-yDn7GMnIkqschViD9XP_LxxeNz3RomrhGkXA4uMZAjPM5Lgb34VbGaQuniebfQ6YDDQZV3APA8Enp7kC7YT6L0vQHM4BioXLeE699Ox1m7duhAbLC_7T-8Q9ENCqeom_fUhrBSWqLNPrn9iFSAMjR3LdQJJeExtAHtAurRekdxR0ja1d6ZS8lDztpUsmqCyHOHdroNMSJ1YYpqw2i7Iqw0PCzAH9gK4W5DvLbiCFxdKrLygo2ajs4DQleZyzI4XjuLvFy2Zq2dWoq1EKTd8LLDGftKl_ys4vTd0Vmba76BMgVlHtNhF7ur1RPskdOwlTKKzkh-RugMkFfaN5PmuKranUsMaOoxRHJRGWg_Ikg'
+              href='https://download1478.mediafire.com/lqeg1c8b3l9gSrK8sVARtLY6k_eyD8WOnxNlpHGJ1Lerw131vwvCacZHCZ0mXrX5-ml8CY8DsBrlKL3rkFV3TN2sP4DCAdg6R4e0cECRQdmrt7ZiTuZZl1VsqPkLbhNS0Fgc60F8aWKOQNo286GgEYdEH4NN2AqDl2LXYZjqYDEYqJ4/g9pww25bun7l4z6/kelvin_de_miranda_barros_curriculo.pdf'
               target='_blank'
               rel='noopener noreferrer'
               aria-label='Baixar currículo'
