@@ -13,6 +13,8 @@ interface TabDataItemInterface {
   content: React.JSX.Element;
 }
 
+type TabId = 'experience' | 'skills' | 'education' | 'certifications';
+
 const TAB_DATA: TabDataItemInterface[] = [
   {
     title: 'Experiência',
@@ -94,9 +96,7 @@ const TAB_DATA: TabDataItemInterface[] = [
 ];
 
 export function AboutSection() {
-  const [tab, set_tab] = useState<
-    'experience' | 'skills' | 'education' | 'certifications'
-  >('experience');
+  const [tab, set_tab] = useState<TabId>('experience');
   const [is_pending, start_transition] = useTransition();
 
   const ref_image = useRef(null);
@@ -105,7 +105,7 @@ export function AboutSection() {
   const ref_about = useRef(null);
   const is_in_view_about = useInView(ref_about, { once: true });
 
-  const handle_tab_change = (id: string) => {
+  const handle_tab_change = (id: TabId) => {
     start_transition(() => {
       set_tab(id);
     });
