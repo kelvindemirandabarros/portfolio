@@ -20,11 +20,31 @@ const TAB_DATA: TabDataItemInterface[] = [
     content: (
       <ul className='list-disc pl-2'>
         <li>
-          2 anos XP Mobile - Projeto pessoal de aplicativo mobile - 06/2023 a
-          07/2025
+          2 anos XP Full-Stack - Projeto pessoal de aplicativo mobile - 06/2023
+          a 07/2025
+          <ul className='list-disc pl-6 mt-1'>
+            <li>Mobile - React Native com Expo, Zustand, TypeScript</li>
+
+            <li>
+              Frontend - React.js e Next.js, deploy automatizado com GitHub
+              Actions e Vercel
+            </li>
+
+            <li>
+              Backend - Node.js com Express.js, TypeScript, JWT, MongoDB, Zod
+            </li>
+          </ul>
         </li>
+
+        <br></br>
+
         <li>
           1 ano XP Backend - TeamSoft Tecnologia e Sistemas - 03/2022 a 03/2023
+          <ul className='list-disc pl-6 mt-1'>
+            <li>Node.js com Adonis.js, MySQL, AWS</li>
+
+            <li>Arquitetura REST com autenticação JWT</li>
+          </ul>
         </li>
       </ul>
     )
@@ -34,10 +54,11 @@ const TAB_DATA: TabDataItemInterface[] = [
     id: 'skills',
     content: (
       <ul className='list-disc pl-2'>
-        <li>Backend Node.js - Express.js, Fastify</li>
-        <li>Banco de Dados MongoDB, MySQL</li>
-        <li>Mobile React Native</li>
-        <li>Frontend React.js / Next.js</li>
+        <li>Frontend - React.js e Next.js</li>
+        <li>Mobile - React Native</li>
+        <li>Backend - Node.js com Express.js, Fastify</li>
+        <li>Banco de Dados - MongoDB, MySQL</li>
+        <li>Versionamento - Git, GitHub</li>
       </ul>
     )
   },
@@ -73,7 +94,9 @@ const TAB_DATA: TabDataItemInterface[] = [
 ];
 
 export function AboutSection() {
-  const [tab, set_tab] = useState('skills');
+  const [tab, set_tab] = useState<
+    'experience' | 'skills' | 'education' | 'certifications'
+  >('experience');
   const [is_pending, start_transition] = useTransition();
 
   const ref_image = useRef(null);
