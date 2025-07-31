@@ -57,10 +57,10 @@ export function ContactSection() {
       <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2'></div>
 
       <div className='z-10'>
-        <h5 className='text-xl font-bold text-white my-2'>{`Vamos nos conectar`}</h5>
+        <h5 className='text-xl font-bold text-white my-2'>{`Entre em contato`}</h5>
 
         <p className='text-[#ADB7BE] mb-4 max-w-md'>
-          {`Atualmente estou em busca de novas oportunidades, minha caixa de entrada está sempre aberta. Se você tiver alguma dúvida ou apenas quiser dizer oi, farei o possível para entrar em contato com você! Estas são minhas redes sociais:`}
+          {`Estas são minhas redes sociais e meu contato direto (Github, LinkedIn, Whatsapp):`}
         </p>
 
         <div className='socials flex flex-row gap-4'>

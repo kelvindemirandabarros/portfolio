@@ -15,6 +15,21 @@ interface TabDataItemInterface {
 
 const TAB_DATA: TabDataItemInterface[] = [
   {
+    title: 'Experiência',
+    id: 'experience',
+    content: (
+      <ul className='list-disc pl-2'>
+        <li>
+          2 anos XP Mobile - Projeto pessoal de aplicativo mobile - 06/2023 a
+          07/2025
+        </li>
+        <li>
+          1 ano XP Backend - TeamSoft Tecnologia e Sistemas - 03/2022 a 03/2023
+        </li>
+      </ul>
+    )
+  },
+  {
     title: 'Habilidades',
     id: 'skills',
     content: (
@@ -94,7 +109,7 @@ export function AboutSection() {
         >
           <Image
             alt='Imagem de uma mesa com um computador, vários acessórios de escritório e dispositivos eletrônicos, e algumas prateleiras na parede com objetos diversos.'
-            src='/images/about_image.png'
+            src='/images/about_image.webp'
             width={500}
             height={500}
             style={{ borderRadius: 20 }}
@@ -111,14 +126,21 @@ export function AboutSection() {
           <h2 className='text-4xl font-bold text-white mb-4'>Sobre mim</h2>
 
           <p className='text-base lg:text-lg'>
-            Sou um desenvolvedor web backend, estudando para ser full stack. Eu
-            tenho experiencia trabalhando com Node.js, Express.js, MongoDB,
-            React, JavaScript, TypeScript, HTML, CSS e Git. Eu aprendo rápido e
-            estou sempre buscando expandir meu conhecimento e conjunto de
-            habilidades.
+            Sou um desenvolvedor full-stack, e tenho experiência trabalhando com
+            React.js e Next.js, React Native, Node.js, Express.js, MongoDB,
+            JavaScript, TypeScript, HTML, CSS e Git. Aprendo rápido e estou
+            sempre buscando expandir meu conhecimento e conjunto de habilidades.
           </p>
 
           <div className='flex flex-row justify-start mt-8'>
+            <TabButton
+              select_tab={() => handle_tab_change('experience')}
+              active={tab === 'experience'}
+            >
+              {' '}
+              Experiência{' '}
+            </TabButton>
+
             <TabButton
               select_tab={() => handle_tab_change('skills')}
               active={tab === 'skills'}
