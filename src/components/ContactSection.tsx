@@ -7,8 +7,9 @@ import Image from 'next/image';
 // SVG Icons:
 import GithubIcon from '../../public/github-icon.svg';
 import LinkedinIcon from '../../public/linkedin-icon.svg';
+import WhatsappIcon from '../../public/whatsapp-icon.svg';
 
-export function EmailSection() {
+export function ContactSection() {
   const [email_submitted, set_email_submitted] = useState(false);
 
   const handle_submit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -56,13 +57,13 @@ export function EmailSection() {
       <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2'></div>
 
       <div className='z-10'>
-        <h5 className='text-xl font-bold text-white my-2'>{`Vamos nos conectar`}</h5>
+        <h5 className='text-xl font-bold text-white my-2'>{`Entre em contato`}</h5>
 
         <p className='text-[#ADB7BE] mb-4 max-w-md'>
-          {`Atualmente estou em busca de novas oportunidades, minha caixa de entrada está sempre aberta. Se você tiver alguma dúvida ou apenas quiser dizer oi, farei o possível para entrar em contato com você! Estas são minhas redes sociais:`}
+          {`Estas são minhas redes sociais e meu contato direto (Github, LinkedIn, Whatsapp):`}
         </p>
 
-        <div className='socials flex flex-row gap-2'>
+        <div className='socials flex flex-row gap-4'>
           <Link href='https://github.com/kelvindemirandabarros' target='_blank'>
             <Image src={GithubIcon} alt='Ícone do Github' />
           </Link>
@@ -72,6 +73,20 @@ export function EmailSection() {
             target='_blank'
           >
             <Image src={LinkedinIcon} alt='Ícone do LinkedIn' />
+          </Link>
+
+          <Link
+            href='https://api.whatsapp.com/send?phone=+5583996633179&text=Ol%C3%A1+Kelvin%2C+estou+vindo+atrav%C3%A9s+do+seu+portf%C3%B3lio+e+gostaria+de+...'
+            target='_blank'
+          >
+            <Image
+              src={WhatsappIcon}
+              alt='Ícone do Whatsapp'
+              style={{
+                width: 42,
+                height: 42
+              }}
+            />
           </Link>
         </div>
       </div>

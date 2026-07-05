@@ -13,12 +13,12 @@ export function ProjectTag({
   on_click,
   is_selected
 }: ProjectTagInterface) {
-  const buttonStyles = is_selected
+  const button_styles = is_selected
     ? 'text-white border-primary-500'
     : 'text-[#ADB7BE] border-slate-600 hover:border-white';
   return (
     <button
-      className={`${buttonStyles} rounded-full border-2 px-6 py-3 text-xl cursor-pointer`}
+      className={`${button_styles} maxw639:w-1/2 rounded-full border-2 px-6 py-3 text-xl cursor-pointer`}
       onClick={() => on_click(tag)}
     >
       {name}
