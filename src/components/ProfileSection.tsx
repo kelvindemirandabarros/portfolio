@@ -69,7 +69,7 @@ export function ProfileSection() {
             </a>
 
             <a
-              href='https://download1478.mediafire.com/lqeg1c8b3l9gSrK8sVARtLY6k_eyD8WOnxNlpHGJ1Lerw131vwvCacZHCZ0mXrX5-ml8CY8DsBrlKL3rkFV3TN2sP4DCAdg6R4e0cECRQdmrt7ZiTuZZl1VsqPkLbhNS0Fgc60F8aWKOQNo286GgEYdEH4NN2AqDl2LXYZjqYDEYqJ4/g9pww25bun7l4z6/kelvin_de_miranda_barros_curriculo.pdf'
+              href='/curriculo_kelvin_de_miranda_barros.pdf'
               target='_blank'
               rel='noopener noreferrer'
               aria-label='Baixar currículo'
