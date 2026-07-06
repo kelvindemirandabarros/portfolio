@@ -7,23 +7,34 @@ const variants = {
 };
 
 interface TabButtonInterface {
+  id: string;
   active: boolean;
   select_tab: React.MouseEventHandler<HTMLButtonElement>;
   children: React.ReactNode;
+  controls: string;
 }
 
 export function TabButton({
+  id,
   active,
   select_tab,
+  controls,
   children
 }: TabButtonInterface) {
   const buttonClasses = active ? 'text-white' : 'text-[#ADB7BE]';
 
   return (
-    <button onClick={select_tab}>
-      <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
+    <button
+      onClick={select_tab}
+      role='tab'
+      id={id}
+      aria-selected={active}
+      aria-controls={controls}
+      tabIndex={active ? 0 : -1}
+    >
+      <span className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
         {children}
-      </p>
+      </span>
 
       <motion.div
         animate={active ? 'active' : 'default'}
