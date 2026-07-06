@@ -146,6 +146,7 @@ export function AboutSection() {
             width={500}
             height={500}
             className='rounded-2xl'
+            loading='eager'
           />
         </motion.div>
 
