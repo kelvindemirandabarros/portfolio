@@ -1,9 +1,10 @@
-import React from 'react';
+// Interfaces:
+import { ProjectTagId } from '../../types/ProjectTag';
 
 interface ProjectTagInterface {
   name: string;
-  tag: string;
-  on_click: Function;
+  tag: ProjectTagId;
+  on_click: (tag: string) => void;
   is_selected: boolean;
 }
 
@@ -18,8 +19,9 @@ export function ProjectTag({
     : 'text-[#ADB7BE] border-slate-600 hover:border-white';
   return (
     <button
-      className={`${button_styles} maxw639:w-1/2 rounded-full border-2 px-6 py-3 text-xl cursor-pointer`}
+      className={`${button_styles} max-sm:w-1/2 rounded-full border-2 px-6 py-3 text-xl`}
       onClick={() => on_click(tag)}
+      aria-pressed={is_selected}
     >
       {name}
     </button>
