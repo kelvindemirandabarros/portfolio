@@ -2,10 +2,10 @@ Este é um projeto [Next.js](https://nextjs.org/) inicializado com [`create-next
 
 ## Iniciando
 
-Para ativar o servidor de desenvolvimento, digite no prompt (necessário ter o [YARN](https://classic.yarnpkg.com/en/docs/install#windows-stable) para este projeto):
+Para iniciar o servidor de desenvolvimento, digite no prompt:
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 Abra o link [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
