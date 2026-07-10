@@ -43,7 +43,7 @@ const TAB_DATA: TabDataItemInterface[] = [
           1 ano XP Backend - TeamSoft Tecnologia e Sistemas - 03/2022 a 03/2023
           <ul className='list-disc pl-6 mt-1'>
             <li>
-              Desenvolvimento e manutenção de APIs para sistema da Domino's.
+              Desenvolvimento e manutenção de APIs para sistema da {"Domino's"}.
               Correção de bugs em produção. Desenvolvimento de novas APIs.
             </li>
 
@@ -159,11 +159,12 @@ export function AboutSection() {
           <h2 className='text-4xl font-bold text-white mb-4'>Sobre mim</h2>
 
           <p className='text-base lg:text-lg'>
-            Sou desenvolvedor full-stack com experiência construindo aplicações
+            Sou desenvolvedor full-stack com experiência em construir aplicações
             web e mobile do zero — do backend em Node.js até a interface em
-            React/React Native. Já levei um projeto pessoal do MVP ao deploy em
-            produção, e hoje busco oportunidades para aplicar essa experiência
-            em um time.
+            React/React Native. Já trabalhei como dev backend profissionalmente,
+            e levei um projeto pessoal do MVP ao deploy em produção, e hoje
+            busco oportunidades para aplicar essa experiência em um novo time
+            multidisciplinar.
           </p>
 
           <div className='flex flex-row justify-start mt-8 overflow-x-auto whitespace-nowrap pb-2'>

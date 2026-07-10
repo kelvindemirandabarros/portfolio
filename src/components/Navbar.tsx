@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
 // Components:
@@ -12,15 +12,15 @@ import { HomeIcon } from './HomeIcon';
 const nav_links = [
   {
     title: 'Sobre',
-    href: '#about'
+    href: '/#about'
   },
   {
     title: 'Projetos',
-    href: '#projects'
+    href: '/#projects'
   },
   {
     title: 'Contato',
-    href: '#contact'
+    href: '/#contact'
   }
 ];
 

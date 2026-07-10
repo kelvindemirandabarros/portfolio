@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+// import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -10,44 +10,44 @@ import LinkedinIcon from '../../public/linkedin-icon.svg';
 import WhatsappIcon from '../../public/whatsapp-icon.svg';
 
 export function ContactSection() {
-  const [email_submitted, set_email_submitted] = useState(false);
+  // const [email_submitted, set_email_submitted] = useState(false);
 
-  const handle_submit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+  // const handle_submit = async (event: React.FormEvent<HTMLFormElement>) => {
+  //   event.preventDefault();
 
-    const data = {
-      email: event.currentTarget.email.value,
-      subject: event.currentTarget.subject.value,
-      message: event.currentTarget.message.value
-    };
-    const json_data = JSON.stringify(data);
-    const endpoint = '/api/send';
+  //   const data = {
+  //     email: event.currentTarget.email.value,
+  //     subject: event.currentTarget.subject.value,
+  //     message: event.currentTarget.message.value
+  //   };
+  //   const json_data = JSON.stringify(data);
+  //   const endpoint = '/api/send';
 
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: 'POST',
-      // Tell the server we're sending JSON.
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      // Body of the request is the JSON data we created above.
-      body: json_data
-    };
+  //   // Form the request for sending data to the server.
+  //   const options = {
+  //     // The method is POST because we are sending data.
+  //     method: 'POST',
+  //     // Tell the server we're sending JSON.
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     // Body of the request is the JSON data we created above.
+  //     body: json_data
+  //   };
 
-    const response = await fetch(endpoint, options);
-    const response_json = await response.json();
+  //   const response = await fetch(endpoint, options);
+  //   const response_json = await response.json();
 
-    if (response.status === 200) {
-      console.log('Mensagem enviada.');
-      set_email_submitted(true);
-    } else {
-      console.log('A mensagem falhou.');
-      set_email_submitted(true);
+  //   if (response.status === 200) {
+  //     console.log('Mensagem enviada.');
+  //     set_email_submitted(true);
+  //   } else {
+  //     console.log('A mensagem falhou.');
+  //     set_email_submitted(true);
 
-      console.log('response_json:', response_json);
-    }
-  };
+  //     console.log('response_json:', response_json);
+  //   }
+  // };
 
   return (
     <section
