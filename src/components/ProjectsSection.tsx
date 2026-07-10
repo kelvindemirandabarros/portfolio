@@ -16,9 +16,9 @@ const projects_data = [
     title: 'API REST para aplicativo mobile',
     description:
       'Backend Node.js completo com testes automatizados para meu app mobile pessoal — autenticação JWT, integração com MongoDB e arquitetura escalável em Node.js. Veja a documentação da API e decisões de arquitetura.',
-    image_url: '/images/projects/ep/package-json.jpeg',
+    image_url: '/images/projects/busca-tudo/backend/package-json.jpeg',
     tags: ['all', 'backend'],
-    page_url: '/ep/backend'
+    page_url: '/busca-tudo/backend'
   }
 ];
 
